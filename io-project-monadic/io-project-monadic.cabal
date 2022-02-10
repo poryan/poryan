@@ -40,6 +40,7 @@ executable animation-cli
 library animation
     build-depends:   base ^>=4.14.1.0
                     , mtl
+                    , text
     exposed-modules:   Animation.State
                      , Animation.Animate
                      , Animation.CLI
