@@ -14,12 +14,12 @@ import qualified Data.Text as T
 main :: IO ()
 main = do
   -- do some cli parsing
-  (env, state) <- cli
+  --(env, state) <- cli
   writeFile "bouncingball.txt" "Starting ball bounce"
 
   --x <-runReaderT (runStateT (runWriterT animate) state) env
   --writeFile "~/bouncingball.txt" (T.unpack $ snd (fst x))
 
-  y <- runApp animate env state
+  y <- runApp animate
   writeFile "bouncingball.txt" (T.unpack y)
    
